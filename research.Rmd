@@ -9,8 +9,12 @@ pagetitle: "Joe Zemmels"
 
 ### CRAN Packages
 
-- [cmcR](https://github.com/CSAFE-ISU/cmcR): An Implementation of the 'Congruent Matching Cells' Method
+- [`cmcR`](https://github.com/CSAFE-ISU/cmcR): An Implementation of the 'Congruent Matching Cells' Method
 
 ### GitHub Packages
 
-- [impressions](https://github.com/jzemmels/impressions): An R package for diagnosing cartridge case impression comparison algorithms
+- [`impressions`](https://github.com/jzemmels/impressions): An R package for diagnosing cartridge case impression comparison algorithms
+
+### Applications
+
+- [`cartridgeInvestigatR`]

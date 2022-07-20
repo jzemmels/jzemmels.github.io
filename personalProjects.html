@@ -312,27 +312,335 @@ $(document).ready(function () {
 <div id="shiny-applications" class="section level2">
 <h2>Shiny Applications</h2>
 <p>I like to make silly and occasionally useful interactive applications
-using the <code>shiny</code> R package.</p>
+using the <a href="https://shiny.rstudio.com/"><code>shiny</code></a> R
+package.</p>
 <div id="rlltrails" class="section level3">
 <h3>RllTrails</h3>
+<p>Access the RllTrails app at <a
+href="https://jzemmels.shinyapps.io/RllTrails/">https://jzemmels.shinyapps.io/RllTrails/</a>.
+The source code is available on <a
+href="https://github.com/jzemmels/RllTrails">GitHub</a>.</p>
+<p>Visualize custom AllTrails lists. I’m not a fan of the AllTrails map
+UI and its impossible to visualize a user-created list on a map in the
+Android version of AllTrails. Paste a link to a user-created list of
+trails to visualize it on a map.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a href="https://rvest.tidyverse.org/"><code>rvest</code></a>:
+scrape geographic and metadata from an AllTrails user-created
+list</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/jsonlite/index.html"><code>jsonlite</code></a>:
+convert raw JSON file to an R data frame</p></li>
+<li><p><a
+href="https://rstudio.github.io/leaflet/"><code>leaflet</code></a>:
+visualize trails on an OpenStreetMap</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>: tidy the
+data for visualization</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>Currently the app shows individual points for each trail. Upon
+clicking a specific trail, I would like to show the trail’s path as it
+appears on AllTrails.</p></li>
+<li><p>Aesthetic changes (it’s currently default shiny)</p></li>
+</ul>
 </div>
 <div id="paintcolortools" class="section level3">
 <h3>paintColorTools</h3>
-</div>
-<div id="nationalparktwitter" class="section level3">
-<h3>nationalParkTwitter</h3>
+<p>Access the paintColorTools app at <a
+href="jzemmels.shinyapps.io/paintcolortools/">jzemmels.shinyapps.io/paintcolortools/</a>.
+The source code is available on <a
+href="https://github.com/jzemmels/paintColorTools">GitHub</a>.</p>
+<p>Explore and compare paint colors from a variety of brands. We moved
+into a new townhouse that was in desperate need of new paint colors. As
+we started researching various brands, I realized that they all use
+obscure names and proprietary coding schemes to uniquely identify their
+colors. Whether intended or not, this made it extremely difficult to
+directly compare colors across brands. Using data from <a
+href="https://convertingcolors.com/lists.html">Converting Colors</a>, I
+designed this app to easily compare similar paint colors across brands
+(measured by Euclidean distance in RGB space). Additionally, I added
+functionality to calculate a palette of representative colors or select
+colors by individual pixels from an uploaded image.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a
+href="https://cran.r-project.org/web/packages/magick/index.html"><code>magick</code></a>,
+<a
+href="https://cran.r-project.org/web/packages/imager/index.html"><code>imager</code></a>:
+low-level image processing tools</p></li>
+<li><p><a
+href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a>:
+visualize paint colors, uploaded image, and color palette</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/dbscan/index.html"><code>dbscan</code></a>:
+calculate representative colors in RGB space by identifying cluster
+medioids from the Density-Based Spatial Clustering of Applications with
+Noise (DBSCAN) algorithm</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>:
+manipulate the data for comparison and visualization</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>The way I’ve applied the DBSCAN algorithm appears to be max-ing
+out the 1 Gb of internal memory allowed on shinyapps.io - I need to
+either figure out how to reduce the memory usage or use a simpler
+algorithm such as k-means.</p></li>
+<li><p>Aesthetic changes (it’s currently default shiny)</p></li>
+</ul>
 </div>
 <div id="musicfrequencyexplorer" class="section level3">
 <h3>musicFrequencyExplorer</h3>
+<p>Access the musicFrequencyExplorer app at <a
+href="https://jzemmels.shinyapps.io/musicFrequencyExplorer/">https://jzemmels.shinyapps.io/musicFrequencyExplorer/</a>.
+The source code is available on <a
+href="https://github.com/jzemmels/musicFrequencyExplorer">GitHub</a>.</p>
+<p>Play notes and chords on a synthetic piano. As a consumer of
+synthwave music, I was interested in learning more about how to build
+chords and chord progressions on a piano. I discovered the
+<code>tuneR</code> package that can create, read, and write pure
+waveforms of an arbitrary frequency. I created this app to explore notes
+on the western chromatic scale, build chords, and even (slowly) create
+songs. I am particularly proud of the piano UI that I created using the
+<code>ggiraph</code> package.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a
+href="https://cran.r-project.org/web/packages/tuneR/index.html"><code>tuneR</code></a>,
+<a
+href="https://cran.r-project.org/web/packages/signal/index.html"><code>signal</code></a>:
+generate, manipulate, read, and write waveforms</p></li>
+<li><p><a
+href="https://davidgohel.github.io/ggiraph/"><code>ggiraph</code></a>:
+creates interactive ggplots. I created a piano interface where clicking
+on a note simulates the pressing of the associated piano key.</p></li>
+<li><p><a href="https://rvest.tidyverse.org/"><code>rvest</code></a>:
+scrape note frequency data from <a
+href="https://pages.mtu.edu/~suits/notefreqs.html">https://pages.mtu.edu/~suits/notefreqs.html</a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>:
+manipulate note frequency data to generate notes/chords</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>Identify/suggest notes and chord progressions based on user
+input</p></li>
+<li><p>Aesthetic changes (it’s currently default shiny)</p></li>
+</ul>
 </div>
-<div id="translationtelephone" class="section level3">
-<h3>translationTelephone</h3>
+<div id="nationalparktwitter" class="section level3">
+<h3>nationalParkTwitter</h3>
+<p>Access the nationalParkTwitter app at <a
+href="https://jzemmels.shinyapps.io/nationalParkTwitter/">https://jzemmels.shinyapps.io/nationalParkTwitter/</a>.
+The source code is available on <a
+href="https://github.com/jzemmels/nationalParkTwitter">GitHub</a>.</p>
+<p>I had recently joined Twitter and was interested in learning about
+the various U.S. national parks, monuments, preserves, etc. It turns out
+that most of these locations have their own devoted Twitter feed. The
+user can click on a national park shown on the map to view its Twitter
+feed. I have used the app to learn more about the spatial relationship
+between national parks and will certainly use it in the future if
+planning a trip to get park updates.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a href="https://irma.nps.gov/DataStore/DownloadFile/673366">U.S.
+National Park Service .shp files</a>: contains geographic data on U.S.
+national parks including park boundary geometries</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/sf/index.html"><code>sf</code></a>:
+read the .shp files into an sf data frame, transform between coordinate
+systems, and simplify NPS park boundary geometries (to reduce memory
+load)</p></li>
+<li><p><a
+href="https://rstudio.github.io/leaflet/"><code>leaflet</code></a>: plot
+the park boundaries on an interactive OpenStreetMap</p></li>
+<li><p><a href="https://rvest.tidyverse.org/"><code>rvest</code></a>:
+scrape NPS twitter from <a
+href="https://jasoncochran.com/blog/all-the-national-park-service-twitter-accounts-in-one-place/">this
+website</a></p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/rtweet/index.html"><code>rtweet</code></a>:
+scrape followers/friends of the National Park Service’s primary twitter
+account to get more NPS twitter handles</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>:
+manipulate and join NPS twitter data to geographic data</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>Add national parks from other countries (e.g., Canada’s park
+system has a similar Twitter presence)</p></li>
+<li><p>Track down missing NPS twitter handles</p></li>
+<li><p>Aesthetic changes (it’s currently default shiny)</p></li>
+</ul>
 </div>
 <div id="artexplorer" class="section level3">
 <h3>artExplorer</h3>
+<p>The source code is available on <a
+href="https://github.com/jzemmels/artExplorer">GitHub</a>. I haven’t
+hosted this app on shinyapps.io because I am limited to five
+applications under a free account. You can still clone this repo and run
+the app locally.</p>
+<p>Explore and download high-quality, public domain images of art. Did
+you know that you can download high-quality images of famous artworks
+from institutions like the <a
+href="https://www.artic.edu/open-access/public-api">Art Institute of
+Chicago</a>? Many of these images are in the public domain, meaning you
+can print these images on a poster or canvas and only pay for the cost
+of printing. Having recently moved into a new townhouse, we had a lot of
+wall space to cover and not a ton of funds to do so. I built this app to
+get easy access to the highest-quality versions of art from a variety of
+website/APIs. While other sites have similar uses, my app is
+specifically geared towards identifying art that satisfies a desire
+dimension (e.g., in inches) and dots-per-inch (DPI).</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a href="https://www.artic.edu/open-access/public-api">Art
+Institute of Chicago’s Public API</a>: uses <a
+href="https://www.elastic.co/what-is/elasticsearch">Elasticsearch</a>’s
+<a
+href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">Query
+DSL</a> to pull art from the Art Institute of Chicago’s public
+collection</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/jsonlite/index.html"><code>jsonlite</code></a>:
+convert AIC data to a data frame.</p></li>
+<li><p><a href="https://rvest.tidyverse.org/"><code>rvest</code></a>:
+scrape artwork data from <a
+href="http://artvee.com/">http://artvee.com/</a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>:
+manipulate scraped data</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>Split the app by the source of the artwork (e.g., Artvee vs. the
+AIC public collection)</p></li>
+<li><p>Add additional filtering options (e.g., movement, artist,
+etc.)</p></li>
+<li><p>Add additional APIs/websites (e.g., <a
+href="https://museo.app/">https://museo.app/</a>)</p></li>
+<li><p>Allow user to input desired size of art and DPI</p></li>
+</ul>
+</div>
+<div id="translationtelephone" class="section level3">
+<h3>translationTelephone</h3>
+<p>The source code is available on <a
+href="https://github.com/jzemmels/translationTelephone">https://github.com/jzemmels/translationTelephone</a>.
+I haven’t hosted this app anywhere because I’m limited to five
+applications on shinyapps.io under a free account. You can still clone
+this repo and run the app locally.</p>
+<p>English idioms rarely translate well into other languages. In fact,
+pure translations (not “localizations”) can often sound humorous or
+absurd when translated back into English. This app uses an open-source
+translation library to chain translations of common English idioms
+across multiple languages. Much like a game of Telephone, the phrase can
+often be changed or obscured upon repeated translation. For example, the
+phrase “ignorance is bliss” translated to Vietnamese, then to Danish,
+and then back to English turns into “The stupidness is happy.” Your task
+is to identify a common English idiom based on a translated version of
+the phrase. Your guess will be graded based on if a word is not part of
+the original idiom (shown as red), is part of the idiom but not in the
+right spot (shown as orange), or part of the idiom and in the right spot
+(shown as green).</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a href="https://github.com/argosopentech/argos-translate">Argos
+Translate Python Library</a>: open-source offline translation
+library</p></li>
+<li><p><a
+href="https://rstudio.github.io/reticulate/"><code>reticulate</code></a>:
+interface with Python libraries and functions in R. This is used to call
+functions that translate phrases in one language to another.</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>:
+manipulate the user’s guess and translation data</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>Figure out how to quickly and easily install the translator on
+the user’s computer</p></li>
+<li><p>Aesthetic changes (it’s currently default shiny)</p></li>
+</ul>
 </div>
 <div id="airbnbslideshow" class="section level3">
 <h3>airbnbSlideshow</h3>
+<p>The source code is available on <a
+href="https://github.com/jzemmels/airbnbSlideshow">GitHub</a>. Because
+this app uses the <a
+href="https://cran.r-project.org/web/packages/RSelenium/index.html"><code>RSelenium</code></a>
+package, I am unable to host this app on shinyapps.io. You can still
+clone this repo and run it locally. Note that there are still a few
+kinks in this app that need to be ironed-out.</p>
+<p>Visualize a slideshow of Airbnb listing photos. Do you enjoy
+scrolling through Airbnb listings? Do you ever wish you could have a
+continuous carousel of pictures from cool Airbnb properties? Look no
+further! Given a location (country, state, city), the app pulls image
+data from Airbnb and visualizes the data in a slide show. Passively
+enjoy your next Airbnb today!</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a
+href="https://cran.r-project.org/web/packages/RSelenium/index.html"><code>RSelenium</code></a>:
+emulate the opening and navigating of an Airbnb webpage.</p></li>
+<li><p><a href="https://rvest.tidyverse.org/"><code>rvest</code></a>:
+scrape data from Airbnb site after loading with <a
+href="https://cran.r-project.org/web/packages/RSelenium/index.html"><code>RSelenium</code></a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>: clean
+and manipulate Airbnb listing photo and metadata</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
+<p>To-do:</p>
+<ul>
+<li><p>The <a href="https://rvest.tidyverse.org/"><code>rvest</code></a>
+package only works for pulling static HTML from a website’s source.
+Fancier sites like Airbnb dynamically populate fields using JavaScript,
+meaning many HTML elements aren’t available until the website finishes
+loading. The <a
+href="https://cran.r-project.org/web/packages/RSelenium/index.html"><code>RSelenium</code></a>
+emulates a user opening and navigating a webpage, meaning it is possible
+to wait for a site to load its JavaScript before scraping with <a
+href="https://rvest.tidyverse.org/"><code>rvest</code></a>.
+Unfortunately, <a
+href="https://cran.r-project.org/web/packages/RSelenium/index.html"><code>RSelenium</code></a>
+is somewhat slow and requires one to initialize a server on the user’s
+computer, which is not possible on remote hosting sites like
+shinyapps.io. I would like to figure out if there’s a faster/better way
+to pull js-populated HTML elements from a website than <a
+href="https://cran.r-project.org/web/packages/RSelenium/index.html"><code>RSelenium</code></a>.</p></li>
+<li><p>Aesthetic changes (it’s currently default shiny)</p></li>
+</ul>
 </div>
 </div>
 
