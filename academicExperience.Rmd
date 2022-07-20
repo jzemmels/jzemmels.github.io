@@ -1,0 +1,92 @@
+---
+title: " "
+pagetitle: "Joe Zemmels"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+## Projects
+
+### A Random-Effects Markov Random Field Model for Cartridge Case Comparison Algorithms
+
+STAT 615: Advanced Bayesian Methods
+  
+[link](https://github.com/jzemmels/stat615_project)
+  
+### BirdCLEF 2021 - Birdcall Identification
+
+STAT 602: Modern Multivariate Statistical Learning
+
+[link](https://github.com/jzemmels/stat602project)
+
+### Hidden Markov Random Field Models for Image Texture Segmentation
+
+STAT 590B: Missing Data Methods
+
+[link](https://github.com/jzemmels/STAT590_finalPresentation)
+
+### Bayesian Analysis of the Chemical Composition of Float Glass
+
+STAT 544: Bayesian Statistics
+  
+[link](https://github.com/jzemmels/bayesianFloatGlassAnalysis)
+  
+### statsfoRstudents interactive application
+
+STAT 585: Data Technologies for Statistical Analysis
+
+[link](https://github.com/jzemmels/statsfoRstudents)
+
+## Coursework
+
+**Cumulative Graduate GPA:** 3.95
+
+**Fall 2021**
+
+  - STAT 615: Advanced Bayesian Methods by Dr. Jarad Niemi, Grade: A
+  
+**Spring 2021**
+
+  - STAT 602: Modern Multivariate Statistical Learning by Dr. Stephen Vardeman, Grade: A
+  
+**Fall 2020**
+
+  - EE 524: Digital Signal Processing by Dr. Aleksandar Dogandzic, Grade: A
+
+  - STAT 590B: Missing Data Methods by Dr. Jae-Kwang Kim, Grade: A
+
+  - STAT 643: Advanced Theory of Statistical Inference by Dr. Daniel Nordman, Grade: A
+  
+**Spring 2020**
+
+  - STAT 544: Bayesian Statistics by Dr. Danica Ommen, Grade: A
+  
+  - STAT 601: Advanced Statistical Methods by Dr. Mark Kaiser, Grade: A-
+  
+  - STAT 642: Advanced Probability Theory by Dr. Vivekananda Roy, Grade: A-
+  
+**Fall 2019**
+  
+  - STAT 520: Statistical Methods III by Dr. Emily Berg, Grade: A
+  
+  - STAT 551: Time Series Analysis by Dr. Daniel Nordman, Grade: A
+
+  - STAT 641: Foundations of Probability Theory by Dr. Arka Ghosh, Grade: A-
+  
+**Spring 2019**
+
+  - COM S: Introduction to Machine Learning by Dr. Kris De Brabanter, Grade: A
+  
+  - STAT 510: Statistical Methods II by Dr. Daniel Nettleton, Grade: A
+  
+  - STAT 543: Theory of Probability and Statistics II by Dr. Vivekananda Roy, Grade: A
+  
+  - STAT 585: Data Technologies for Statistical Analysis by Dr. Heike Hofmann, Grade: A
+  
+**Fall 2018**
+
+  - STAT 500: Statistical Methods I by Dr. Peng Liu, Grade: A
+  
+  - STAT 542: Theory of Probability and Statistics I by Dr. Lily Wang, Grade: A
+  
+  - STAT 579: An Introduction to R by Dr. Heike Hofmann, Grade: A

@@ -1,0 +1,17 @@
+---
+title: " "
+pagetitle: "Joe Zemmels"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<!-- <link rel="stylesheet" href="academicicons/css/academicons.min.css"/> -->
+
+<img src="images/csafe-logo-90.png" style="width:25%; margin-right: 50px" align="right">
+
+**Center for Statistics and Applications in Forensic Evidence**<br>
+195 Durham Center<br>
+613 Morrill Road<br>
+Ames, IA 50011<br>
+651-324-7524<br>
+
+Or connect with me on [GitHub](https://github.com/jzemmels) or [Linkedin](https://www.linkedin.com/in/josephzemmels)

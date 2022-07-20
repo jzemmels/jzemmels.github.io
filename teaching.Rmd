@@ -1,0 +1,76 @@
+---
+title: " "
+pagetitle: "Joe Zemmels"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+## Graduate Teaching Experience
+
+Fall 2022: 
+
+  - **Course Instructor** for STAT 528: Visual Business Analytics
+
+    - *Types of data displays; numerical and visual summaries of data; data structures for data displays; data vs info graphics; good practices of displaying data; human perception and cognition in data displays; graphics as tools of data exploration; graphical diagnostics of statistical models and machine learning procedures; strategies and techniques for data visualizations; basics of reproducibility and repeatability; web-based interactive applets for visual presentation of data and results; programming in R.*
+
+Spring 2022: 
+
+  - **Teaching Assistant** and **Presenter** for [Sampling for Forensic Practitioners](https://forensicstats.org/blog/portfolio/sampling-for-forensic-practitioners-spring2022/)
+
+    - *Covers populations and sampling frames, and sampling methods including geometric sampling. The emphasis will be on understanding how these methods are used to aid and enhance current forensic science practices.*
+
+Fall 2022: 
+
+  - **Teaching Assistant** and **Presenter** for [Sampling for Forensic Practitioners](https://forensicstats.org/blog/portfolio/sampling-for-forensic-practitioners-spring2022/)
+
+Fall 2020: 
+
+  - **Teaching Assistant** for [Statistics for Forensic Practitioners](https://forensicstats.org/course-statistics-for-forensic-practitioners/)
+
+    - *Statistics for Forensic Practitioners is a continuing education statistics course for forensic practitioners provided by the Center for Statistics and Applications in Forensic Evidence. This course equips you to apply the core concepts of probability, statistics, and their application to today’s issues in forensic science –– no matter your prior knowledge of statistics.*
+
+Fall 2019: 
+
+  - **Course Instructor** for STAT 226: Introduction to Business Statistics I
+      
+      - *Obtaining, organizing, and presenting statistical data; measures of location and dispersion; the Normal distribution; sampling and sampling distribution of the sample mean; elements of statistical inference; confidence intervals and hypothesis testing for the mean; describing bivariate relationships and inference for simple linear regression analysis; use of computers to visualize and analyze data.*
+
+Spring 2019: 
+
+  - **Laboratory Teaching Assistant** for STAT 326: Introduction to Business Statistics II
+
+    - *Multiple regression analysis; regression diagnostics; model building; applications in analysis of variance and time series; random variables; distributions; conditional probability; use of computers to visualize and analyze data.*
+
+  - **Grading Teaching Assistant** for STAT 226: Introduction to Business Statistics I
+
+Fall 2018: 
+  
+  - **Laboratory Teaching Assistant** for STAT 101: Principles of Statistics
+
+    - *Statistical concepts in modern society; descriptive statistics and graphical displays of data; the normal distribution; data collection (sampling and designing experiments); elementary probability; elements of statistical inference; estimation and hypothesis testing; linear regression and correlation; contingency tables.*
+
+  - **Grading Teaching Assistant** for STAT 226: Introduction to Business Statistics I
+
+## Professional Teaching Experience
+
+Prior to starting graduate school in Fall 2018 I worked as a long-term substitute teacher and mathematics tutor.
+
+Spring 2018: Long-Term Substitute at [Blaine High School Center for Engineering, Mathematics, and Science](https://www.ahschools.us/bhs)
+
+- Taught Honors Pre-Calculus, Remedial Geometry, and Algebra
+
+Fall 2017: Student Teacher at [Blaine High School Center for Engineering, Mathematics, and Science](https://www.ahschools.us/bhs)
+
+- Taught Statistics & Probability, Geometry, and Algebra
+
+### Tutoring Experience
+
+2017-2018: **Lead Academic Test Prep Tutor** at [Kay Tutoring](https://www.kaytutoring.com/)
+
+  - Tutored middle and high school students in subjects ranging from Pre-Algebra to Multivariate Calculus
+  
+  - Developed and administered SAT and ACT test prep curriculum
+
+2013-2017: **Peer Tutor** at Winona State University
+
+  - Tutored fellow undergraduate students in subjects ranging from Algebra to Introductory Analysis

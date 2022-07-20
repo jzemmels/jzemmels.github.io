@@ -1,0 +1,33 @@
+name: "Joe Zemmels"
+output_dir: "."
+navbar:
+  title: "Joe Zemmels"
+  left:
+    - text: "Academic Experience"
+      href: academicExperience.html
+    - text: "Teaching"
+      href: teaching.html
+    - text: "Research"
+      href: research.html
+    - text: "Speaking"
+      href: talks.html
+    - text: "Software"
+      href: software.html
+    - text: "Personal Projects"
+      href: personalProjects.html
+    -
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    # - icon: ai-google-scholar ai-lg
+    #   href: https://scholar.google.com/citations?user=tLbQTZMAAAAJ&hl=en
+    - icon: fa-file fa-lg
+      href: ./files/resume_Zemmels_10-29.pdf
+    - icon: fab fa-github fa-lg
+      href: http://github.com/jzemmels
+    - icon: fab fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/josephzemmels
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
