@@ -11,5 +11,6 @@ pagetitle: "Joe Zemmels"
 I am a Ph.D. candidate in the [Department of Statistics](https://www.stat.iastate.edu/) at Iowa State University and Graduate Research Assistant at the [Center for Statistics and Applications in Forensic Evidence](https://www.forensicstats.org/) (CSAFE).
 My research interests are in forensic statistics and pattern recognition, with applications to cartridge case evidence.
 
-I earned my MS in statistics in 2020 from Iowa State University and B.Sc. in Honors Mathematics and Mathematics: Secondary Education from Winona State University in 2017.
+I earned my M.Sc. in statistics in 2020 from Iowa State University and B.Sc. in Honors Mathematics and Mathematics: Secondary Education from Winona State University in 2017.
 
+I love creating tools to help others learn and analyze data more effectively.
