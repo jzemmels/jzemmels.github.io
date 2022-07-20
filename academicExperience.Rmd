@@ -92,7 +92,7 @@ Tools utilized:
 
 - [`sklearn`](https://scikit-learn.org/stable/): I used the scikit-learn Python library's `k-means` function as a benchmark to which the HMRF was compared.
 
-- [`reticulate`](https://rstudio.github.io/reticulate/): interface with 
+- [`reticulate`](https://rstudio.github.io/reticulate/): use Python functions in R
 
 - [`xaringan`](https://cran.r-project.org/web/packages/xaringan/index.html): create presentation slides
 
