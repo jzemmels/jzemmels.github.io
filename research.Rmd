@@ -4,6 +4,7 @@ pagetitle: "Joe Zemmels"
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicicons.min.css"/>
 
 ## Firearms and Toolmarks Comparison Algorithms
 
@@ -15,6 +16,6 @@ pagetitle: "Joe Zemmels"
 
 - [`impressions`](https://github.com/jzemmels/impressions): An R package for diagnosing cartridge case impression comparison algorithms
 
-### Applications
+### Interactive Applications
 
-- [`cartridgeInvestigatR`]
+- [`cartridgeInvestigatR`](https://jzemmels.shinyapps.io/cartridgeinvestigatR/): process and compare cartridge case scans

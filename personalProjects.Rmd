@@ -4,6 +4,7 @@ pagetitle: "Joe Zemmels"
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicicons.min.css"/>
 
 ## Shiny Applications
 

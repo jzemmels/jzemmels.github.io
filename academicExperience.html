@@ -279,7 +279,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="./files/resume_Zemmels_10-29.pdf">
-    <span class="fa fa-file fa-lg"></span>
+    <span class="ai ai-cv ai-lg"></span>
      
   </a>
 </li>
@@ -308,44 +308,236 @@ $(document).ready(function () {
 </div>
 
 
-<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<p><link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicicons.min.css"/></p>
 <div id="projects" class="section level2">
 <h2>Projects</h2>
+<p>I summarize various projects I have worked as part of my graduate
+coursework.</p>
 <div
 id="a-random-effects-markov-random-field-model-for-cartridge-case-comparison-algorithms"
 class="section level3">
 <h3>A Random-Effects Markov Random Field Model for Cartridge Case
 Comparison Algorithms</h3>
-<p>STAT 615: Advanced Bayesian Methods</p>
-<p><a href="https://github.com/jzemmels/stat615_project">link</a></p>
+<div class="row" align="center">
+<p><img src="images/gmrf_dependencyDiagram.png" alt="DSPG" style="width:50%"></p>
+</div>
+<p>Final project for STAT 615: Advanced Bayesian Methods. I worked on
+this project by myself. Find report, presentation slides, and code on <a
+href="https://github.com/jzemmels/stat615_project">GitHub</a>.</p>
+<p>The goal of this project was to obtain a model-based estimate of a
+cartridge case comparison algorithm’s error rate. I developed a Bayesian
+random-effects model with a Markov Random Field spatial term to capture
+behavior in the similarity scores for two cartridge cases computed by
+the algorithm. I fit the model using the Integrated Nested LaPlace
+Approximation (INLA) algorithm as implemented in the <a
+href="https://becarioprecario.bitbucket.io/inla-gitbook/index.html"><code>inla</code></a>
+R package. I was able to obtain interpretable parameter estimates that
+measured, for example, whether the algorithm naturally assigns high
+similarity scores to specific cartridge cases or cartridge cases fired
+from specific barrels. The spatial parameter estimates were also
+interpretable and indicated regions of a cartridge case that tend to be
+assigned higher similarity scores compared to other regions.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a
+href="https://becarioprecario.bitbucket.io/inla-gitbook/index.html"><code>inla</code></a>:
+fit model to data</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/xaringan/index.html"><code>xaringan</code></a>:
+create presentation slides</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/rmarkdown/index.html"><code>rmarkdown</code></a>,
+<a
+href="https://cran.r-project.org/web/packages/knitr/index.html"><code>knitr</code></a>:
+write report</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>: process
+model data</p></li>
+<li><p><a
+href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a>: create
+visualizations of model estimates and findings.</p></li>
+</ul>
 </div>
 <div id="birdclef-2021---birdcall-identification"
 class="section level3">
 <h3>BirdCLEF 2021 - Birdcall Identification</h3>
-<p>STAT 602: Modern Multivariate Statistical Learning</p>
-<p><a href="https://github.com/jzemmels/stat602project">link</a></p>
+<div class="row" align="center">
+<p><img src="images/birdClef602ProjectExample.png" alt="602Project" style="width:70%"></p>
+</div>
+<p>Final project for STAT 602: Modern Multivariate Statistical Learning.
+I worked in a team of three on this project. Report, presentation
+slides, and code can be found on <a
+href="https://github.com/jzemmels/stat602project">GitHub</a>.</p>
+<p>The goal of this project was to classify whether a 5 second audio
+clip contained a bird call. We converted an audio file to a 2D frequency
+over time representation called a <em>spectrogram</em> (see example
+above). The three of us then independently engineered features for each
+spectrogram and trained our own classifiers using these features. For
+example, I trained <em>k</em>-Nearest Neighbors, Random Forest, XGBoost,
+support-vector machine, and C5.0 classifiers. Each of our classifiers
+returned a probability that an audio file contained a bird call. We then
+trained a Classification and Regression Tree (CART) model using these
+class probabilities. Our leave one out cross-validation estimated
+accuracy using the ensembling technique was 0.944 (i.e., we were able to
+correctly classify 94.4% of training audio files correctly).
+Unfortunately, we ran out of time in the semester to apply our trained
+model to test data.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a href="https://topepo.github.io/caret/"><code>caret</code></a>:
+R API to various machine learning algorithms</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/signal/index.html"><code>signal</code></a>,
+<a
+href="https://cran.r-project.org/web/packages/imager/index.html"><code>imager</code></a>:
+low-level signal and image processing tools</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>: process
+image data and similarity features</p></li>
+<li><p><a
+href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a>: create
+summary visualizations of findings.</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/xaringan/index.html"><code>xaringan</code></a>:
+create presentation slides</p></li>
+</ul>
 </div>
 <div
 id="hidden-markov-random-field-models-for-image-texture-segmentation"
 class="section level3">
 <h3>Hidden Markov Random Field Models for Image Texture
 Segmentation</h3>
-<p>STAT 590B: Missing Data Methods</p>
-<p><a
-href="https://github.com/jzemmels/STAT590_finalPresentation">link</a></p>
+<div class="row" align="center">
+<p><img src="images/imageTextureSegmentation.png" alt="602Project" style="width:60%"></p>
+</div>
+<p>Final project for STAT 590B: Missing Data Methods. I worked on this
+project by myself. Code and presentation slides can be found on <a
+href="https://github.com/jzemmels/STAT590_finalPresentation">GitHub</a>.</p>
+<p>The goal of this project was to use an algorithm to classify regions
+of an images with different textures using a Hidden Markov Random Field
+(HMRF) model. This model models an individual pixel’s texture
+classification as a latent variable that depends on the texture
+classifications of neighboring pixels. I use a Markov Random Field model
+to describe the spatial relationship between pixel classifications. The
+picture above shows an example of (top row) simulated images of various
+textures with added noise and (bottom row) the texture classifications
+using the HMRF model. The first two images are the same except for the
+standard deviation of the added noise. The misclassification rate (MCR)
+is used as a diagnostic - results indicate that MCR is more heavily
+affected by noise than the number of classes.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a href="https://scikit-image.org/"><code>skimage</code></a>: I
+used the scikit-image Python library to perform a variety of image
+processing tasks.</p></li>
+<li><p><a
+href="https://scikit-learn.org/stable/"><code>sklearn</code></a>: I used
+the scikit-learn Python library’s <code>k-means</code> function as a
+benchmark to which the HMRF was compared.</p></li>
+<li><p><a
+href="https://rstudio.github.io/reticulate/"><code>reticulate</code></a>:
+interface with</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/xaringan/index.html"><code>xaringan</code></a>:
+create presentation slides</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/mrf2d/index.html"><code>mrf2d</code></a>:
+R implementation of the Hidden Markov Random Field model</p></li>
+</ul>
 </div>
 <div id="bayesian-analysis-of-the-chemical-composition-of-float-glass"
 class="section level3">
 <h3>Bayesian Analysis of the Chemical Composition of Float Glass</h3>
-<p>STAT 544: Bayesian Statistics</p>
-<p><a
-href="https://github.com/jzemmels/bayesianFloatGlassAnalysis">link</a></p>
+<div class="row" align="center">
+<p><img src="images/chemicalConcentrations.png" alt="602Project" style="width:60%"></p>
 </div>
-<div id="statsforstudents-interactive-application"
+<p>Final project for STAT 544: Bayesian Statistics. I worked on this
+project by myself. Report, slides, and code can be found on <a
+href="https://github.com/jzemmels/bayesianFloatGlassAnalysis">GitHub</a>.</p>
+<p>The goal of this project was to model the chemical concentrations of
+float glass. Forensic glass analysts use these chemical concentrations
+to, for example, match glass shards found on a suspect to a broken
+window at a crime scene. Modeling this chemical concentration helps us
+understand how these chemical concentrations vary across manufacturers,
+time, and individual panes of glass. Panes of glass were obtained from
+two float glass manufacturers and the concentration of various elements
+(e.g., Iron, Hafnium, Zirconium) were measured per pane. During
+exploratory data analysis, I identified change in the concentration of
+some elements over time. Thus, I compared two Bayesian models: one that
+modeled the chemical concentration per pane of glass (i.e., independence
+between sampled panes) and another that modeled a dependence over time
+as stationary autoregressive. After model fitting and diagnosing, I
+noticed an extreme positive dependence between mean concentrations over
+time for Hafnium and Zirconium. It seems that the raw materials used in
+the manufacturing of these panes started off with large concentrations
+of these elements that “ran out” over time.</p>
+<p>Tools utilized:</p>
+<ul>
+<li><p><a
+href="https://mc-stan.org/users/interfaces/rstan"><code>rstan</code></a>,
+<a href="https://mc-stan.org/bayesplot/"><code>bayesplot</code></a>: fit
+and diagnose the Bayesian models</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/xaringan/index.html"><code>xaringan</code></a>:
+create presentation slides</p></li>
+<li><p><a
+href="https://cran.r-project.org/web/packages/rmarkdown/index.html"><code>rmarkdown</code></a>,
+<a
+href="https://cran.r-project.org/web/packages/knitr/index.html"><code>knitr</code></a>:
+write report</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>, <a
+href="https://lubridate.tidyverse.org/"><code>lubridate</code></a>:
+process glass and model data</p></li>
+<li><p><a
+href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a>: create
+visualizations of model estimates and findings.</p></li>
+</ul>
+</div>
+<div id="statsforstudents-package-and-shiny-application"
 class="section level3">
-<h3>statsfoRstudents interactive application</h3>
-<p>STAT 585: Data Technologies for Statistical Analysis</p>
-<p><a href="https://github.com/jzemmels/statsfoRstudents">link</a></p>
+<h3>statsfoRstudents package and shiny application</h3>
+<div class="row" align="center">
+<p><img src="images/statsfoRstudentsHex.png" alt="602Project" style="width:60%"></p>
+</div>
+<p>Final project for STAT 585: Data Technologies for Statistical
+Analysis. I worked on this project in a team of four. Code for my
+contribution to the project can be found on <a
+href="https://github.com/jzemmels/statsfoRstudents">GitHub</a>.</p>
+<p>The goal of this project was to create a package and interactive web
+application to help statistics students learn introductory concepts. I
+created a visual tool for determining when to accept or reject a
+hypothesis test given null and alternative hypotheses, a test statistic,
+and a significance level. I also added a madlibs-style Hypothesis Test
+“game” whereby a students are given a random hypothesis test-related
+problem and must fill-in blanks in the standard hypothesis testing
+procedure. Finally, I created a visual tool to demonstrate the
+asymptotic distributional properties of the sample mean.</p>
+<ul>
+<li><p><a
+href="https://cran.r-project.org/web/packages/devtools/index.html"><code>devtools</code></a>,
+<a href="https://testthat.r-lib.org/"><code>testthat</code></a>, <a
+href="https://usethis.r-lib.org/"><code>usethis</code></a>, <a
+href="https://pkgdown.r-lib.org/"><code>pkgdown</code></a>: tools to
+create and maintain package and write unit tests</p></li>
+<li><p><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>, <a
+href="https://tidyr.tidyverse.org/"><code>tidyr</code></a>, <a
+href="https://purrr.tidyverse.org/"><code>purrr</code></a>, <a
+href="https://stringr.tidyverse.org/"><code>stringr</code></a>: process
+simulated data before visualizing.</p></li>
+<li><p><a
+href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a>: create
+educational visualizations</p></li>
+<li><p><a href="https://shiny.rstudio.com/"><code>shiny</code></a>: app
+UI and backend</p></li>
+</ul>
 </div>
 </div>
 <div id="coursework" class="section level2">

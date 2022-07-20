@@ -4,9 +4,15 @@ pagetitle: "Joe Zemmels"
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicicons.min.css"/>
 
-In the Summer 2021, I had the honor of working with the Iowa Department of Human Rights (DHR) as part of the [Data Science for the Public Good](https://dspg.iastate.edu/) program.
-Iowa DHR was interested in collecting and analyzing Iowa workforce and economic development data to develop educational resources for state legislators and other stakeholders.
+<div class='row' align='center'>
+  <img src="images/dspgIowa.jpg" alt="DSPG" style="width:30%">
+  <img src="images/idhr.png" alt="IDHR" style="width:15%">
+</div>
+
+In the Summer 2021 I had the honor of working with the Iowa Department of Human Rights (IDHR) as part of the [Data Science for the Public Good](https://dspg.iastate.edu/) program.
+IDHR was interested in collecting and analyzing Iowa workforce and economic development data to develop educational resources for state legislators and other stakeholders.
 As a Graduate Fellow, I along with ISU faculty [Chris Seeger](https://dspg.iastate.edu/people/christopher-seeger) and [Bailey Hanson](https://dspg.iastate.edu/people/bailey-hanson) supervised a team of three undergraduate students.
 
 As the team supervisor, I worked closely with the undergraduate students to teach them how to use R and help them clarify the "story" of their data.
