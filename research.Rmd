@@ -19,3 +19,11 @@ pagetitle: "Joe Zemmels"
 ### Interactive Applications
 
 - [`cartridgeInvestigatR`](https://jzemmels.shinyapps.io/cartridgeinvestigatR/): process and compare cartridge case scans
+
+## Contributed Talks
+
+2022 International Association of Identification, in-person: *A Cartridge Case Comparison Pipeline*
+
+2022 American Association of Forensic Science, in-person: *An Accessible Open-Source Implementation of the Congruent Matching Cells Algorithms for Cartridge Case Analysis* ([slides](https://github.com/jzemmels/aafs22_slides/blob/main/slides/An%20Accessible%20Open-Source%20Implementation%20of%20the%20Congruent%20Matching%20Cells%20Algorithms%20for%20Cartridge%20Case%20Analysis%20D38.pptx))
+
+2020 Firearms and Toolmarks Workshop *cmcR: Open-Source Implementation of the Congruent Matching Cells Method* ([slides](https://github.com/jzemmels/cmcR_presentation))
