@@ -12,6 +12,10 @@ I like to make silly and occasionally useful interactive applications using the 
 
 ### RllTrails
 
+<div class='row' align='center'>
+<img src="images/RllTrails_screenshot.png" alt="602Project" style="width:60%">
+</div>
+
 Access the RllTrails app at [https://jzemmels.shinyapps.io/RllTrails/](https://jzemmels.shinyapps.io/RllTrails/). The source code is available on [GitHub](https://github.com/jzemmels/RllTrails).
 
 Visualize custom AllTrails lists.
@@ -38,6 +42,10 @@ To-do:
 
 
 ### paintColorTools
+
+<div class='row' align='center'>
+<img src="images/paintColorTools_screenshot.png" alt="602Project" style="width:60%">
+</div>
 
 Access the paintColorTools app at [jzemmels.shinyapps.io/paintcolortools/](jzemmels.shinyapps.io/paintcolortools/).
 The source code is available on [GitHub](https://github.com/jzemmels/paintColorTools).
@@ -69,6 +77,10 @@ To-do:
 
 ### musicFrequencyExplorer
 
+<div class='row' align='center'>
+<img src="images/musicFrequencyExplorer_screenshot.png" alt="602Project" style="width:60%">
+</div>
+
 Access the musicFrequencyExplorer app at [https://jzemmels.shinyapps.io/musicFrequencyExplorer/](https://jzemmels.shinyapps.io/musicFrequencyExplorer/). The source code is available on [GitHub](https://github.com/jzemmels/musicFrequencyExplorer).
 
 Play notes and chords on a synthetic piano. As a consumer of synthwave music, I was interested in learning more about how to build chords and chord progressions on a piano.
@@ -95,6 +107,10 @@ To-do:
 - Aesthetic changes (it's currently default shiny)
 
 ### nationalParkTwitter
+
+<div class='row' align='center'>
+<img src="images/nationalParkTwitter_screenshot.png" alt="602Project" style="width:60%">
+</div>
 
 Access the nationalParkTwitter app at [https://jzemmels.shinyapps.io/nationalParkTwitter/](https://jzemmels.shinyapps.io/nationalParkTwitter/).
 The source code is available on [GitHub](https://github.com/jzemmels/nationalParkTwitter).
@@ -130,6 +146,10 @@ To-do:
 
 ### artExplorer
 
+<div class='row' align='center'>
+<img src="images/artExplorer_screenshot.png" alt="602Project" style="width:60%">
+</div>
+
 The source code is available on [GitHub](https://github.com/jzemmels/artExplorer). 
 I haven't hosted this app on shinyapps.io because I am limited to five applications under a free account.
 You can still clone this repo and run the app locally.
@@ -155,15 +175,21 @@ Tools utilized:
 
 To-do:
 
+- Fix a bug where images do not appear on newest GitHub version of the app
+
 - Split the app by the source of the artwork (e.g., Artvee vs. the AIC public collection)
 
 - Add additional filtering options (e.g., movement, artist, etc.)
 
 - Add additional APIs/websites (e.g., [https://museo.app/](https://museo.app/))
 
-- Allow user to input desired size of art and DPI 
+- Allow user to input desired size of art and DPI
 
 ### translationTelephone
+
+<div class='row' align='center'>
+<img src="images/guessingGameScreenshot.png" alt="602Project" style="width:60%">
+</div>
 
 The source code is available on [https://github.com/jzemmels/translationTelephone](https://github.com/jzemmels/translationTelephone). I haven't hosted this app anywhere because I'm limited to five applications on shinyapps.io under a free account. You can still clone this repo and run the app locally.
 
@@ -192,6 +218,10 @@ To-do:
 - Aesthetic changes (it's currently default shiny)
 
 ### airbnbSlideshow
+
+<div class='row' align='center'>
+<img src="images/airbnbSlideshow_screenshot.png" alt="602Project" style="width:60%">
+</div>
 
 The source code is available on [GitHub](https://github.com/jzemmels/airbnbSlideshow). 
 Because this app uses the [`RSelenium`](https://cran.r-project.org/web/packages/RSelenium/index.html) package, I am unable to host this app on shinyapps.io. 
