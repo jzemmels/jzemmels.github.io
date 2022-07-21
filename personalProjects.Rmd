@@ -13,7 +13,7 @@ I like to make silly and occasionally useful interactive applications using the 
 ### RllTrails
 
 <div class='row' align='center'>
-<img src="images/RllTrails_screenshot.png" alt="602Project" style="width:60%">
+<img src="images/RllTrails_screenshot.png" alt="602Project" style="width:100%">
 </div>
 
 Access the RllTrails app at [https://jzemmels.shinyapps.io/RllTrails/](https://jzemmels.shinyapps.io/RllTrails/). The source code is available on [GitHub](https://github.com/jzemmels/RllTrails).
@@ -44,7 +44,7 @@ To-do:
 ### paintColorTools
 
 <div class='row' align='center'>
-<img src="images/paintColorTools_screenshot.png" alt="602Project" style="width:60%">
+<img src="images/paintColorTools_screenshot.png" alt="602Project" style="width:100%">
 </div>
 
 Access the paintColorTools app at [jzemmels.shinyapps.io/paintcolortools/](jzemmels.shinyapps.io/paintcolortools/).
@@ -78,7 +78,7 @@ To-do:
 ### musicFrequencyExplorer
 
 <div class='row' align='center'>
-<img src="images/musicFrequencyExplorer_screenshot.png" alt="602Project" style="width:60%">
+<img src="images/musicFrequencyExplorer_screenshot.png" alt="602Project" style="width:100%">
 </div>
 
 Access the musicFrequencyExplorer app at [https://jzemmels.shinyapps.io/musicFrequencyExplorer/](https://jzemmels.shinyapps.io/musicFrequencyExplorer/). The source code is available on [GitHub](https://github.com/jzemmels/musicFrequencyExplorer).
@@ -109,7 +109,7 @@ To-do:
 ### nationalParkTwitter
 
 <div class='row' align='center'>
-<img src="images/nationalParkTwitter_screenshot.png" alt="602Project" style="width:60%">
+<img src="images/nationalParkTwitter_screenshot.png" alt="602Project" style="width:100%">
 </div>
 
 Access the nationalParkTwitter app at [https://jzemmels.shinyapps.io/nationalParkTwitter/](https://jzemmels.shinyapps.io/nationalParkTwitter/).
@@ -147,7 +147,7 @@ To-do:
 ### artExplorer
 
 <div class='row' align='center'>
-<img src="images/artExplorer_screenshot.png" alt="602Project" style="width:60%">
+<img src="images/artExplorer_screenshot.png" alt="602Project" style="width:100%">
 </div>
 
 The source code is available on [GitHub](https://github.com/jzemmels/artExplorer). 
@@ -188,7 +188,7 @@ To-do:
 ### translationTelephone
 
 <div class='row' align='center'>
-<img src="images/guessingGameScreenshot.png" alt="602Project" style="width:60%">
+<img src="images/guessingGameScreenshot.png" alt="602Project" style="width:100%">
 </div>
 
 The source code is available on [https://github.com/jzemmels/translationTelephone](https://github.com/jzemmels/translationTelephone). I haven't hosted this app anywhere because I'm limited to five applications on shinyapps.io under a free account. You can still clone this repo and run the app locally.
@@ -220,7 +220,7 @@ To-do:
 ### airbnbSlideshow
 
 <div class='row' align='center'>
-<img src="images/airbnbSlideshow_screenshot.png" alt="602Project" style="width:60%">
+<img src="images/airbnbSlideshow_screenshot.png" alt="602Project" style="width:100%">
 </div>
 
 The source code is available on [GitHub](https://github.com/jzemmels/airbnbSlideshow). 
