@@ -6,7 +6,38 @@ pagetitle: "Joe Zemmels"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicicons.min.css"/>
 
-## Firearms and Toolmarks Comparison Algorithms
+My research focuses on pattern recognition and forensic statistics, with an emphasis on firearm and toolmark evidence. 
+I am particularly interested in developing statistically-sound and accessible algorithms to objectively compare forensic evidence.
+
+## Journal Articles
+
+**Zemmels, J.**, VanderPlas, S., Hofmann, H. *Automatic Matching of Cartridge Case Impressions*, (in preparation, to be submitted to The Journal of Data Science, Statistics, and Visualizations). 
+
+**Zemmels, J.**, VanderPlas, S., Hofmann, H. *Diagnostic Tools for Cartridge Case Comparison Algorithms*, (in preparation, to be submitted to The Journal of Computational and Graphical Statistics). 
+
+**Zemmels, J.**, VanderPlas, S., Hofmann, H. *A Study in Reproducibility: the Congruent Matching Cells method and cmcR package* (submitted to The R Journal).
+
+
+## Contributed Talks
+
+### Oral Presentations
+
+**Zemmels, J.**, VanderPlas, S., Hofmann, H. (2022). *An Accessible Open-Source Implementation of the Congruent Matching Cells Algorithms for Cartridge Case Analysis*, oral presentation at the American Academy of Forensic Science (AAFS) 74th Annual Meeting, Seattle, WA, February 21-25. ([slides](https://github.com/jzemmels/aafs22_slides/blob/main/slides/An%20Accessible%20Open-Source%20Implementation%20of%20the%20Congruent%20Matching%20Cells%20Algorithms%20for%20Cartridge%20Case%20Analysis%20D38.pptx))
+
+### Poster Presentations
+
+**Zemmels, J.**, VanderPlas, S., Hofmann, H. (2022). *A Cartridge Case Comparison Pipeline*, poster presentation at the International Association for Identification (IAI) 106th Annual Meeting, Omaha, NE, August 1-5.
+
+Tai, X., Eddy, W., **Zemmels, J.** (2019). *Developing Methods for Cartridge Breechface Images*, poster presentation at the CSAFE All-Hands meeting, Ames, IA, May 20-22.
+
+
+### Webinar Presentations
+
+**Zemmels, J.**, Schoen, A., Mack, D., Johnson, Z., Seeger C., Hanson, B. (2021). *DHR "Just the Facts" on Economic and Workforce Development*, webinar presentation for the Data Science for the Public Good Symposium, August 6.  ([event link](https://datascienceforthepublicgood.org/events/dspg2021/postersessions/dhr-just-facts-economic-and-workforce-development))
+
+**Zemmels, J.**, VanderPlas, S., Hofmann, H. (2020). *cmcR: Open-Source Implementation of the Congruent Matching Cells Method*, webinar presentation for Firearms and Toolmarks Workshop, November 31 - December 1. ([slides](https://github.com/jzemmels/cmcR_presentation))
+
+## software
 
 ### CRAN Packages
 
@@ -19,11 +50,3 @@ pagetitle: "Joe Zemmels"
 ### Interactive Applications
 
 - [`cartridgeInvestigatR`](https://jzemmels.shinyapps.io/cartridgeinvestigatR/): process and compare cartridge case scans
-
-## Contributed Talks
-
-2022 International Association of Identification, in-person: *A Cartridge Case Comparison Pipeline*
-
-2022 American Association of Forensic Science, in-person: *An Accessible Open-Source Implementation of the Congruent Matching Cells Algorithms for Cartridge Case Analysis* ([slides](https://github.com/jzemmels/aafs22_slides/blob/main/slides/An%20Accessible%20Open-Source%20Implementation%20of%20the%20Congruent%20Matching%20Cells%20Algorithms%20for%20Cartridge%20Case%20Analysis%20D38.pptx))
-
-2020 Firearms and Toolmarks Workshop *cmcR: Open-Source Implementation of the Congruent Matching Cells Method* ([slides](https://github.com/jzemmels/cmcR_presentation))

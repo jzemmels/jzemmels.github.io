@@ -5,8 +5,8 @@ navbar:
   left:
     - text: "Academic Experience"
       href: academicExperience.html
-    - text: "Data Science for the Public Good"
-      href: dspg.html
+    - text: "Work Experience"
+      href: workExperience.html
     - text: "Teaching"
       href: teaching.html
     - text: "Research"
