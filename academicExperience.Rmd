@@ -8,7 +8,7 @@ pagetitle: "Joe Zemmels"
 
 ## Projects
 
-I summarize various projects I have worked as part of my graduate coursework.
+I summarize various projects I have worked on during my graduate coursework.
 
 ### A Random-Effects Markov Random Field Model for Cartridge Case Comparison Algorithms
 
