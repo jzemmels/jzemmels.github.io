@@ -24,7 +24,7 @@ navbar:
     # - icon: ai-google-scholar ai-lg
     #   href: https://scholar.google.com/citations?user=tLbQTZMAAAAJ&hl=en
     - icon: ai-cv ai-lg
-      href: ./files/resume_Zemmels_10-29.pdf
+      href: ./files/zemmelsCV.pdf
     - icon: fab fa-github fa-lg
       href: http://github.com/jzemmels
     - icon: fab fa-linkedin fa-lg
