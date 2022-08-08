@@ -1,36 +1,20 @@
-on:
-  push:
-    paths: ['**.Rmd']
+# from https://github.com/cboettig/compendium/blob/master/.github/workflows/main.yml
+on: [push]
 
-name: render-rmarkdown
+name: render all R Markdown documents 
 
 jobs:
-  render-rmarkdown:
+  render:
+    name: render all R Markdown documents 
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Set up pandoc
-        uses: r-lib/actions/setup-pandoc@v2
-
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install package dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
-      
-      - name: Render Rmarkdown files and Commit Results
+      - uses: actions/checkout@v1
+      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-pandoc@v1
+      - uses: r-lib/actions/setup-tinytex@master
+      - name: Install known depedencies  
         run: |
-          RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
-          Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f, output_format = c("html_document","github_document"))' ${RMD_PATH[*]}
-          git config --local user.name "$GITHUB_ACTOR"
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git add *[.Rmd/.md]
-          git add *[.Rmd/.html]
-          git commit -m 'Re-build Rmarkdown files' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+          Rscript -e "install.packages(c('rmarkdown', 'knitr', 'devtools'))"
+      - name: render all R Markdown documents 
+        run: |
+          Rscript -e "lapply(list.files(pattern = 'Rmd|rmd', recursive = TRUE), rmarkdown::render)"
