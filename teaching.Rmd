@@ -52,6 +52,13 @@ Fall 2018:
 
   - **Grading Teaching Assistant** for STAT 226: Introduction to Business Statistics I
 
+## Samples of Self-Produced Educational Materials
+
+The video playlist below is a sample of the self-produced educational content that I have created during my graduate school career.
+I created these videos as part of three courses, STAT 528: Visual Business Analytics, Sampling for Forensic Practitioners, and Introduction to Sampling for Forensic Practitioners.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLT5JZPu64N6qmkOCE91azuki5LcWhM3qv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Professional Teaching Experience
 
 Prior to starting graduate school in Fall 2018 I worked as a long-term substitute teacher and mathematics tutor.

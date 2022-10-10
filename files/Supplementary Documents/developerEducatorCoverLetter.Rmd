@@ -1,0 +1,42 @@
+---
+author: Joseph Zemmels
+return-address: 
+  - 1399 Turnberry Pl
+  - Castle Rock, CO 80104
+address:
+  - RStudio
+  - 250 Northern Ave
+  - Boston, MA 02210
+  
+subject: Cover Letter for Developer Educator
+opening: Dear RStudio Hiring Team,
+closing: Best regards,
+signature: Joseph Zemmels
+
+output: komaletter::komaletter
+---
+
+Thank you for the opportunity to apply for the Developer Educator position at RStudio.
+As someone who is passionate about both data science and education, I relish the opportunity to connect the R community with RStudio's package development tools.
+I am excited to apply my teaching abilities and development skills to create accessible, pedagogically-sound resources and advocate for developer's needs.
+
+As a teaching assistant at Iowa State University, I frequently develop educational resources used by other educators.
+I created multimedia educational resources for a Visual Business Analytics online course I teach that introduces Master's of Business Analytics students to data visualization in R.
+This includes a series of self-produced videos about cleaning and summarizing data with tools like dplyr, ggplot2, and shiny.
+I also created accompanying RMarkdown files for students to follow along with the videos and perform their own analyses.
+This aligns with my preferred teaching philosophy: John Dewey's experiential learning that emphasizes "learning by doing."
+I received positive feedback from students on these videos, who felt more comfortable with performing data analyses despite having little prior R programming experience.
+These educational materials will be used in future iterations of the course by other instructors.
+
+I have also developed multiple R packages to document and share my research in my research assistant role at the Center for Statistics and Applications in Forensic Evidence.
+My Ph.D. research focuses on developing objective and statistically-sound techniques to compare cartridge case impression evidence.
+I have published one package on CRAN called "cmcR" and plan to publish at least two more, "impressions" and "scored," that are currently available on my GitHub.
+It is important to me that these methods are accessible, both in terms of acquisition and comprehensibility, to fellow researchers and forensic practitioners.
+I created the packages to align to the four principles of a tidy API according to Hadley Wickham's "tidy tools manifesto."
+This includes writing code and documentation to be human-friendly and modularizing the analysis pipeline to work easily with the pipe operator.
+I regularly use tools like devtools, usethis, testthat, and roxygen2 to ease package creation and documentation.
+I recognize how important these packages are to supporting a robust and productive developer community.
+
+I look forward to discussing how my training and experience will be an asset to RStudio and the R developer community.
+I am a firm advocate of RStudio's mission to help people understand data using accessible, open-source tools.
+I am eager for the opportunity to support this mission as an educator and advocate for the R community.
