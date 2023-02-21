@@ -13,7 +13,7 @@
 
 <title>Joe Zemmels</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -249,16 +246,16 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="academicExperience.html">Academic Experience</a>
-</li>
-<li>
-  <a href="workExperience.html">Work Experience</a>
+  <a href="research.html">Research</a>
 </li>
 <li>
   <a href="teaching.html">Teaching</a>
 </li>
 <li>
-  <a href="research.html">Research</a>
+  <a href="academicExperience.html">Academic Experience</a>
+</li>
+<li>
+  <a href="workExperience.html">Work Experience</a>
 </li>
 <li>
   <a href="personalProjects.html">Personal Projects</a>
@@ -313,56 +310,69 @@ interested in developing statistically-sound and accessible algorithms
 to objectively compare forensic evidence.</p>
 <div id="journal-articles" class="section level2">
 <h2>Journal Articles</h2>
-<p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H.
+<ul>
+<li><p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H.
 <em>Automatic Matching of Cartridge Case Impressions</em>, (in
 preparation, to be submitted to The Journal of Data Science, Statistics,
-and Visualizations).</p>
-<p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H.
+and Visualizations).</p></li>
+<li><p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H.
 <em>Diagnostic Tools for Cartridge Case Comparison Algorithms</em>, (in
 preparation, to be submitted to The Journal of Computational and
-Graphical Statistics).</p>
-<p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. <em>A Study
-in Reproducibility: the Congruent Matching Cells method and cmcR
-package</em> (submitted to The R Journal).</p>
+Graphical Statistics).</p></li>
+<li><p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. <em>A
+Study in Reproducibility: the Congruent Matching Cells method and cmcR
+package</em> (accepted by The R Journal).</p></li>
+</ul>
 </div>
 <div id="contributed-talks" class="section level2">
 <h2>Contributed Talks</h2>
 <div id="oral-presentations" class="section level3">
 <h3>Oral Presentations</h3>
-<p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2022).
+<ul>
+<li><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2022).
 <em>An Accessible Open-Source Implementation of the Congruent Matching
 Cells Algorithms for Cartridge Case Analysis</em>, oral presentation at
 the American Academy of Forensic Science (AAFS) 74th Annual Meeting,
 Seattle, WA, February 21-25. (<a
-href="https://github.com/jzemmels/aafs22_slides/blob/main/slides/An%20Accessible%20Open-Source%20Implementation%20of%20the%20Congruent%20Matching%20Cells%20Algorithms%20for%20Cartridge%20Case%20Analysis%20D38.pptx">slides</a>)</p>
+href="https://github.com/jzemmels/aafs22_slides/blob/main/slides/An%20Accessible%20Open-Source%20Implementation%20of%20the%20Congruent%20Matching%20Cells%20Algorithms%20for%20Cartridge%20Case%20Analysis%20D38.pptx">slides</a>)</li>
+</ul>
 </div>
 <div id="poster-presentations" class="section level3">
 <h3>Poster Presentations</h3>
-<p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2022).
+<ul>
+<li><p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2023).
+<em>Visual Diagnostics for Cartridge Case Impression Evidence</em>,
+poster presentation at the American Academy of Forensic Science (AAFS)
+75th Annual Meeting, Orlando, FL, February 13-17.</p></li>
+<li><p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2022).
 <em>A Cartridge Case Comparison Pipeline</em>, poster presentation at
 the International Association for Identification (IAI) 106th Annual
-Meeting, Omaha, NE, August 1-5.</p>
-<p>Tai, X., Eddy, W., <strong>Zemmels, J.</strong> (2019).
+Meeting, Omaha, NE, August 1-5.</p></li>
+<li><p>Tai, X., Eddy, W., <strong>Zemmels, J.</strong> (2019).
 <em>Developing Methods for Cartridge Breechface Images</em>, poster
-presentation at the CSAFE All-Hands meeting, Ames, IA, May 20-22.</p>
+presentation at the CSAFE All-Hands meeting, Ames, IA, May
+20-22.</p></li>
+</ul>
 </div>
 <div id="webinar-presentations" class="section level3">
 <h3>Webinar Presentations</h3>
-<p><strong>Zemmels, J.</strong>, Schoen, A., Mack, D., Johnson, Z.,
+<ul>
+<li><p><strong>Zemmels, J.</strong>, Schoen, A., Mack, D., Johnson, Z.,
 Seeger C., Hanson, B. (2021). <em>DHR “Just the Facts” on Economic and
 Workforce Development</em>, webinar presentation for the Data Science
 for the Public Good Symposium, August 6. (<a
 href="https://datascienceforthepublicgood.org/events/dspg2021/postersessions/dhr-just-facts-economic-and-workforce-development">event
-link</a>)</p>
-<p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2020).
+link</a>)</p></li>
+<li><p><strong>Zemmels, J.</strong>, VanderPlas, S., Hofmann, H. (2020).
 <em>cmcR: Open-Source Implementation of the Congruent Matching Cells
 Method</em>, webinar presentation for Firearms and Toolmarks Workshop,
 November 31 - December 1. (<a
-href="https://github.com/jzemmels/cmcR_presentation">slides</a>)</p>
+href="https://github.com/jzemmels/cmcR_presentation">slides</a>)</p></li>
+</ul>
 </div>
 </div>
 <div id="software" class="section level2">
-<h2>software</h2>
+<h2>Software</h2>
 <div id="cran-packages" class="section level3">
 <h3>CRAN Packages</h3>
 <ul>
@@ -373,17 +383,21 @@ An Implementation of the ‘Congruent Matching Cells’ Method</li>
 <div id="github-packages" class="section level3">
 <h3>GitHub Packages</h3>
 <ul>
-<li><a
+<li><p><a
 href="https://github.com/jzemmels/impressions"><code>impressions</code></a>:
 An R package for diagnosing cartridge case impression comparison
-algorithms</li>
+algorithms</p></li>
+<li><p><a
+href="https://github.com/jzemmels/scored"><code>scored</code></a>: An R
+package to compare cartridge cases and compute similarity scores based
+on their breech face impressions.</p></li>
 </ul>
 </div>
 <div id="interactive-applications" class="section level3">
 <h3>Interactive Applications</h3>
 <ul>
 <li><a
-href="https://jzemmels.shinyapps.io/cartridgeinvestigatR/"><code>cartridgeInvestigatR</code></a>:
+href="https://csafe.shinyapps.io/cartridgeInvestigatR/"><code>cartridgeInvestigatR</code></a>:
 process and compare cartridge case scans</li>
 </ul>
 </div>

@@ -14,4 +14,4 @@ My research interests are in pattern recognition and forensic statistics, with a
 I earned my M.Sc. in statistics in 2020 from Iowa State University and B.Sc. in Honors Mathematics and Mathematics: Secondary Education from Winona State University in 2017.
 
 I love creating tools to help others learn and analyze data more effectively.
- 
+Check out the [cartridgeInvestigatR](https://csafe.shinyapps.io/cartridgeInvestigatR/) web application I developed to help forensic examiners engage with cartridge case comparison algorithms.

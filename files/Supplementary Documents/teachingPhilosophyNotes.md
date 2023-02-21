@@ -32,9 +32,13 @@ Students were assessed not only on the quality of their final summary, but also 
 In this way, students were explicitly encouraged to fail at answering a data-related question, reflect upon their failure, and try another solution.
 
 Another way I that encourage "failure" is to intentionally pose open-ended, often ambiguous data problems.
+I believe that most data-related questions do not have a single, "correct" answer and that my students may provide different, yet equally valid, solutions from my own.
+As an avid learner myself, engaging with others' perspectives is one of the biggest joys I receive from teaching.
+It is my job to strike the delicate balance between giving space to grapple with nuanced problems and providing guiderails to achieve the learning outcomes.
+
+
+
 As a simple example: rather than asking students in an introductory methods class to determine whether a data set contains outliers, I might ask students to hypothesize why the data set contains outliers.
 The former question requires simple calculations given a suitable defintion of "outlier" while the latter requires students to scrutinize the data collection and recording process - a task that anyone dealing with real data will undoubtedly perform.
-I believe that most data-related questions do not have a single, "correct" answer and that my students may provide different, yet equally valid, solutions from my own.
-As an avid student myself, learning from others' perspectives is one of the biggest joys I receive from teaching.
-It is my job to strike the delicate balance between giving space to grapple with nuanced problems and providing guiderails to achieve the learning outcomes.
+
 Continuing with the outlier example, I would pose a question like "Why does this data set contain outliers?" after discussing common errors in data collection and allow students to explore the data set on their own to develop hypotheses.
