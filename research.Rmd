@@ -15,7 +15,7 @@ I am particularly interested in developing statistically-sound and accessible al
 
 - **Zemmels, J.**, VanderPlas, S., Hofmann, H. *Diagnostic Tools for Cartridge Case Comparison Algorithms*, (in preparation, to be submitted to The Journal of Computational and Graphical Statistics). 
 
-- **Zemmels, J.**, VanderPlas, S., Hofmann, H. *A Study in Reproducibility: the Congruent Matching Cells method and cmcR package* (accepted by The R Journal).
+- **Zemmels, J.**, VanderPlas, S., & Hofmann, H. (2023). *A Study in Reproducibility: The Congruent Matching Cells Algorithm and cmcR Package*. In The R Journal (Vol. 14, Issue 4, pp. 79–102). The R Foundation. https://doi.org/10.32614/rj-2023-014
 
 
 ## Contributed Talks
@@ -34,6 +34,8 @@ I am particularly interested in developing statistically-sound and accessible al
 
 
 ### Webinar Presentations
+
+- **Zemmels, J.**, Hofmann, H. (2023) Visual Diagnostics for Algorithmic Cartridge Case Comparisons. webinar presentation for the Center for Statistics and Applications in Forensic Evidence.
 
 - **Zemmels, J.**, Schoen, A., Mack, D., Johnson, Z., Seeger C., Hanson, B. (2021). *DHR "Just the Facts" on Economic and Workforce Development*, webinar presentation for the Data Science for the Public Good Symposium, August 6.  ([event link](https://datascienceforthepublicgood.org/events/dspg2021/postersessions/dhr-just-facts-economic-and-workforce-development))
 
