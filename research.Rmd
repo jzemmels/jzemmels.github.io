@@ -26,7 +26,9 @@ I am particularly interested in developing statistically-sound and accessible al
 
 ### Poster Presentations
 
-- **Zemmels, J.**, VanderPlas, S., Hofmann, H. (2023). *Visual Diagnostics for Cartridge Case Impression Evidence*, poster presentation at the American Academy of Forensic Science (AAFS) 75th Annual Meeting, Orlando, FL, February 13-17.
+- **Zemmels, J.**, VanderPlas, S., Hofmann, H. (2023). *Visual Diagnostics for Cartridge Case Impression Evidence*, poster presentation at the American Academy of Forensic Science (AAFS) 75th Annual Meeting, Orlando, FL, February 13-17. ([poster](https://learn.forensicstats.org/product?catalog=PR2302Zemmels) accessible with free account sign-up)
+
+  - Winner of "Outstanding Student Poster Award" at the AAFS 2023 Young Forensic Scientists Forum ([article](https://forensicstats.org/news-posts/csafe-graduate-student-wins-outstanding-poster-award-at-aafs-young-forensic-scientists-forum/))
 
 - **Zemmels, J.**, VanderPlas, S., Hofmann, H. (2022). *A Cartridge Case Comparison Pipeline*, poster presentation at the International Association for Identification (IAI) 106th Annual Meeting, Omaha, NE, August 1-5.
 
@@ -35,7 +37,7 @@ I am particularly interested in developing statistically-sound and accessible al
 
 ### Webinar Presentations
 
-- **Zemmels, J.**, Hofmann, H. (2023) Visual Diagnostics for Algorithmic Cartridge Case Comparisons. webinar presentation for the Center for Statistics and Applications in Forensic Evidence.
+- **Zemmels, J.**, Hofmann, H. (2023) *Visual Diagnostics for Algorithmic Cartridge Case Comparisons*, webinar presentation for the Center for Statistics and Applications in Forensic Evidence. March 29. ([slides](https://jzemmels.github.io/csafe-webinar-visualDiagnostics/#/title-slide), [github](https://github.com/jzemmels/csafe-webinar-visualDiagnostics), [recording](https://learn.forensicstats.org/product?catalog=WB230329) accessible with free account sign-up)
 
 - **Zemmels, J.**, Schoen, A., Mack, D., Johnson, Z., Seeger C., Hanson, B. (2021). *DHR "Just the Facts" on Economic and Workforce Development*, webinar presentation for the Data Science for the Public Good Symposium, August 6.  ([event link](https://datascienceforthepublicgood.org/events/dspg2021/postersessions/dhr-just-facts-economic-and-workforce-development))
 
